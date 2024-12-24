@@ -29,7 +29,7 @@ let ws;
 function connectHostPeer() {
     let roomID = document.getElementById('roomIDH').innerHTML;
     
-    ws = new WebSocket(`ws://localhost:3500/join?roomID=${roomID}`);
+    ws = new WebSocket(`wss://video-chat-1-k9c7.onrender.com//join?roomID=${roomID}`);
 
     ws.addEventListener('open', (event) => {
         console.log('WebSocket connection opened:', event);
